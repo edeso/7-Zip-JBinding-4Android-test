@@ -27,11 +27,7 @@ ext {
 
 android {
     compileSdk 35
-    ndkVersion '27.2.12479018'
-    compileOptions {
-        sourceCompatibility JavaVersion.VERSION_21
-        targetCompatibility JavaVersion.VERSION_1_8
-    }
+    //ndkVersion '27.2.12479018'
 
     buildFeatures {
         buildConfig = true
@@ -50,7 +46,7 @@ android {
         namespace 'net.sf.sevenzipjbinding'
 
         versionCode 1
-        versionName "2024.12"
+        versionName "2025.01.26"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles 'consumer-rules.pro'
