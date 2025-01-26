@@ -27,7 +27,11 @@ ext {
 
 android {
     compileSdk 35
-    //ndkVersion '27.2.12479018'
+    ndkVersion '27.2.12479018'
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
 
     buildFeatures {
         buildConfig = true
