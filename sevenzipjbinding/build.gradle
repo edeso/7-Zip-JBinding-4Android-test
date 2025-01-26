@@ -30,7 +30,11 @@ android {
     ndkVersion '27.2.12479018'
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_21
-        targetCompatibility JavaVersion.VERSION_21
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    buildFeatures {
+        buildConfig = true
     }
 
     publishing {
@@ -73,9 +77,9 @@ android {
 publishing {
     publications {
         release(MavenPublication) {
-            groupId = 'com.github.lings03'
+            groupId = 'com.github.edeso'
             artifactId = '7-Zip-JBinding-4Android'
-            version = '2024.12'
+            version = android.defaultConfig.versionName
 
             afterEvaluate {
                 from components.release
